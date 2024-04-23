@@ -1,0 +1,132 @@
+*{                    /*pega todos os elementos do html*/
+    margin: 0px auto; /*tira toda a margem dos itens*/
+    font-family: sans-serif; /*bota uma fonte não serifada*/
+    box-sizing: border-box;
+}
+
+body{                   /*aplica em tudo que está no body*/
+    background-color: black;/*altera a cor*/
+    height: 100vh;                          /*100vh = full height*/
+    display: flex;                          /*display fica flex*/
+    justify-content: center;                /*alinha horizontal - lados*/
+    align-items: center;                    /*alinha vertical - cima baixo*/
+    flex-direction: column;                 /*Um item abaixo do outro em coluna*/
+}
+
+.container{                     /*altera o container*/
+    /*background-color: green; /*Cor container*/
+    max-width: 720px;   /*Tamanho máximo container*/
+    display: flex;      /*display fica flex*/
+    flex-direction: column; /*muda a direção do flex pra coluna*/
+    justify-content: center; /*alinha horizontal - lados*/
+    align-items: center;    /*alinha vertical - cima baixo*/
+    padding: 0 14px;        /*distância interna aos itens*/
+    border-radius: 5px;     /*borda do container arredondada */
+}
+
+.logo{                      /*altera a logo*/
+    max-width: 230px;       /*tamanho máximo do logo*/
+}
+
+.title{                     /*altera no title*/
+    text-align: center;     /*alinha texto para o meio*/
+    color: #fff;            /*cor da fonte*/
+    margin: 24px 0;         /*margem de 24px para cima*/
+}
+
+.form label{                /*altera o css do form e do label dentro dele */
+    color: #fff;            /*cor da fonte*/
+    font-size: 20px;        /*tamanho da fonte*/
+}
+
+.input{                     /*altera no input*/
+    width: 100%;            /*tamanho do input dentro do container*/
+    height: 40px;           /*altura do input*/
+    border-radius: 4px;     /*arredonda a borda*/
+    font-size: 20px;        /*tamanho da fonte*/
+    padding: 0 14px;        /*aumenta o padding do input lateral*/
+    margin-top: 10px;       /*aumenta margin do top*/
+    margin-bottom: 18px;    /*aumenta margin do bottom*/
+}
+
+.button{
+    background-color: rgb(45, 84, 225); /*altera a cor do botão*/
+    color: #fff;      /*altera a cor da fonte do botão*/
+    width: 100%;        /*tamanho do botão no container*/
+    height: 45px;       /*altera altura*/
+    font-size: 20px;    /*muda tamanho da fonte*/
+    border-radius: 6px; /*deixa mais arredondado*/
+    margin-bottom: 20px;    /*dá uma margem de 20pixels no bot*/
+    font-weight: bold;  /*deixa em negrito*/
+}
+
+.result{                /*mulda na classe do result, que sai o resultado*/
+    background-color: green;    /*cor de fundo*/
+    max-width: 600px;  /*tamanho máximo da resposta*/
+    height: 90px;       /*altura do resultado*/
+    display: flex;      /*display flexível, agora podemos mexer onde o item vai ficar */
+    justify-content: center;    /*coloca no centro na horizontal - lados*/
+    align-items: center;        /*alinha vertical - cima baixo*/
+    padding: 0 20px;        /*padding pra esquerda e direita*/
+    border-radius: 4px;     /*deixa arredondada a borda*/
+    user-select: none;      /*usuario não consegue selecionar*/
+    flex-direction: column;
+    transition: transform 0.6s;
+}
+
+.hide{
+    display: none;
+}
+
+.result:hover{
+    transform: scale(1.1);
+}
+
+.result span{
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#text-result{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info{
+    position: fixed;
+    right: 15px;
+    bottom: 22px;
+}
+
+.info-img{
+    width: 66px;
+    height: 66px;
+}
+
+.tooltip{
+    color: #fff;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 8px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 28px;
+    display: none;
+}
+
+.info:hover .tooltip{
+    display: inline;
+}
+
+.sobre{
+    max-width: 600px;
+    background-color: #5b5a5a;
+    padding: 25px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.sobre p{
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 150%;
+}
